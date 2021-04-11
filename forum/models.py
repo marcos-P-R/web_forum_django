@@ -8,6 +8,13 @@ class Post(models.Model):
     name_author = models.CharField(max_length=100)
     creation = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        ordering = ("-creation",)
+
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+         return "/forum/%i/" % self.id
+    
     
