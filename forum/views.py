@@ -9,10 +9,10 @@ from .models import Post
 # Create your views here.
 class List(generic.ListView):
     model = Post
-    #template_name = "TEMPLATE_NAME"
+    template_name = "forum/post_list.html"
 
 
 class Detail(generic.DetailView):
     model = Post
-    #template_name = "TEMPLATE_NAME"
+    template_name = "forum/detail.html"
 
