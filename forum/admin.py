@@ -4,4 +4,7 @@ from .models import Post
 
 # Register your models here.
 
-admin.site.register(Post)
+@admin.register(Post)
+
+class Post_admin(admin.ModelAdmin):
+    list_display = ("title", "name_author", "creation")
