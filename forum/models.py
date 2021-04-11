@@ -6,6 +6,7 @@ class Post(models.Model):
     title = models.CharField(max_length=150)
     body_text = models.TextField()
     name_author = models.CharField(max_length=100)
+    creation = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
