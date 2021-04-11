@@ -1,0 +1,12 @@
+{% extends 'forum/index.html' %}
+
+{% block title %}Web Forum 👨‍💻👩‍💻{% endblock %}
+    
+{% block content %}
+    {% for thread in post_list %}
+        <section class="container">
+            <h2><a href="{{ thread.get_absolute_url }}"> {{ thread.title }}</a></h2>
+            <a href="{{ thread.get_absolute_url }}">Detalhes</a>
+        </section>
+    {% endfor %}
+{% endblock %}
