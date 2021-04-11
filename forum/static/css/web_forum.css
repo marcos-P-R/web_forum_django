@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topo{
+    height: 50px;
+    background-color: rgb(47, 101, 218);
+}
+
+
+.topo h1{
+    display: inline;
+    margin-left: 16px;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+}
+
+.topo a{
+    text-align: end;
+    padding: 8px 10px 8px 10px;
+    background-color: gray;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.container{
+    width: 600px;
+    height: 40px;
+    border-bottom: solid 1px #2853ca;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-conteudo{
+    width: 600px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-conteudo h2{
+    font-size: 32px;
+}
+
+.date{
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgb(105, 102, 102);
+}
+
+.body_text{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 2.5em;
+}
