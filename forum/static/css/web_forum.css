@@ -8,31 +8,43 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .topo{
+    width: 100%;
     height: 50px;
     background-color: rgb(47, 101, 218);
 }
 
 
-.topo h1{
+.topo h1 a{
     display: inline;
     margin-left: 16px;
     color: #fff;
     font-family: 'Dancing Script', cursive;
     font-size: 34px;
+    text-decoration: none;
 }
 
-.topo a{
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 16px;
+}
+
+.novo{
+    display: flex;
     text-align: end;
     padding: 8px 10px 8px 10px;
     background-color: gray;
     text-decoration: none;
     color: #fff;
-
+    margin-left: 8px;
+    border-radius: 8px;
 }
 
 .container{
-    width: 600px;
+    width: 60%;
     height: 40px;
     border-bottom: solid 1px #2853ca;
     display: flex;
@@ -41,6 +53,11 @@
     margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-link{
+    margin-left: 4px;
+    text-decoration-line: none;
 }
 
 .container-conteudo{
@@ -64,4 +81,24 @@
     font-size: 24px;
     line-height: 1.5;
     margin-top: 2.5em;
+}
+
+form{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario input, .formulario textarea{
+    border: solid 1px #2853ca;  
+}
+
+
+@media (max-width: 400px){
+    .botoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 16px;
+    }
 }
