@@ -1,9 +1,22 @@
 {% extends 'forum/index.html' %}
 
 {% block content %}
-    <form action="" method = "post">
+    <form method="POST" class="formulario">
         {% csrf_token %}
-
-        {{ form }}
+        
+        <section class="mb-3">
+            <label for={{ form.title.id_for_label }} class="form-label"> Titulo</label>
+            <div>{{ form.title }}</div>
+        </section>
+        <section class="mb-3">
+            <label for={{ form.body_text.id_for_label }} class="form-label"> Texto</label>
+            <div>{{ form.body_text }}</div>    
+        </section>
+        <section class="mb-3">
+            <label for={{ form.name_author.id_for_label }} class="form-label"> Nome do autor</label>
+            <div>{{ form.name_author }}</div>
+        </section>
+        <button type="submit" class="btn btn-primary mb-3">Adicionar</button>
     </form>
 {% endblock  %}
+
