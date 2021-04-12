@@ -5,8 +5,11 @@
 {% block content %}
     {% for thread in post_list %}
         <section class="container">
-            <h2><a href="{{ thread.get_absolute_url }}"> {{ thread.title }}</a></h2>
-            <a href="{{ thread.get_absolute_url }}">Detalhes</a>
+            <h2><a class="container-link" href="{{ thread.get_absolute_url }}"> {{ thread.title }}</a></h2>
+            <div>
+                <a class="container-link" href="{{ thread.get_absolute_url }}">Detalhes</a>
+                <a class="container-link" href="delete/{{ thread.id }}">Excluir</a>
+            </div>
         </section>
     {% endfor %}
 {% endblock %}
