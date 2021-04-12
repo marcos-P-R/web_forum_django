@@ -1,12 +1,12 @@
-from django import forms
-from .models import Post
+from django.forms import ModelForm
+from .models import Post, Answer
 
-class Insere_topico_form(forms.Form):
+class Insere_topico_form(ModelForm):
     class Meta:
         model = Post
+        fields = ('title', 'body_text', 'name_author',)
 
-        fields = [
-            'title',
-            'body_text',
-            'name_author'
-        ]
+class Insere_resposta(ModelForm):
+    class Meta:
+        model = Answer
+        fields = ('text_answer', 'name',)

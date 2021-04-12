@@ -18,3 +18,8 @@ class Post(models.Model):
          return "/forum/%i/" % self.id
     
     
+class Answer(models.Model):
+    text_answer = models.TextField()
+    name = models.CharField(max_length=250)
+    date_creation = models.DateTimeField(auto_now_add=True)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
